@@ -1,6 +1,4 @@
-# <div align = "center">
-    Quizzical
-  </div>
+# <div align = "center">Quizzical</div>
 <p align = "center" >
   A Quiz Application made with 
   <a href = "https://reactjs.org/">React </a> 
