@@ -12,7 +12,7 @@ export default function Error(){
     return (
         <div style = {{display: "flex", margin: "0", flexDirection: "column", textAlign: "center", gap: "15px"}} className = "errorContainer">
             <i style = {{color: "red"}}className="fa-2xl fa-sharp fa-solid fa-circle-exclamation"></i>
-            <span > Its us not you... <br></br>There seems to be no more questions for this query, resetting token...</span>
+            <span > Its us not you... <br></br>There seems to be a token error no more questions for this query, resetting token...</span>
             {reload()}
         </div>
     )
