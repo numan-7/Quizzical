@@ -23,8 +23,8 @@ const api = {
        {type: "Vehicles",  id: "28"},
        {type: "Comics",  id: "29"},
        {type: "Gadgets",  id: "30"},
-       {type: "General Knowledge",  id: "31"},
-       {type: "General Knowledge",  id: "32"},
+       {type: "Anime & Manga",  id: "31"},
+       {type: "Cartoons & Animation",  id: "32"},
    ],
 
    difficulties: [
