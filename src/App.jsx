@@ -63,7 +63,7 @@ function App() {
     // retrieve token from local storage
     let token = localStorage.getItem("token")
     setisLoading(true)
-    if(token){
+    if(token != null){
       // check if token is valid
       fetch(`https://opentdb.com/api.php?amount=10&token=${token}`)
         .then(res => res.json())
