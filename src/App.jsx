@@ -50,7 +50,7 @@ function App() {
       })
   }
 
-  async function getNewToken(){
+  function getNewToken(){
     fetch('https://opentdb.com/api_token.php?command=request')
     .then(res => res.json())
     .then(data => {
@@ -59,7 +59,7 @@ function App() {
   }
   
   // Gets Token From Local Storage or API
-  async function fetchToken(){
+  function fetchToken(){
     // retrieve token from local storage
     let token = localStorage.getItem("token")
     setisLoading(true)
@@ -67,11 +67,11 @@ function App() {
       // check if token is valid
       fetch(`https://opentdb.com/api.php?amount=10&token=${token}`)
         .then(res => res.json())
-        .then(async data => {
+        .then(data => {
           // if token is invalid
           if(data.response_code != 0){
             // get new token and set new Url
-            token = await getNewToken()
+            token = getNewToken()
             localStorage.setItem("token", token)
           }
           setUrl(baseURL + `&token=${token}`)
