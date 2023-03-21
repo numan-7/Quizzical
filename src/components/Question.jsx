@@ -36,6 +36,7 @@ export default function Question(props){
             style = {returnStyle(btns)}
             key = {btns}
             onClick = {() => props.handleClick(props.data.id, btns)}
+            required
         >
             {decodeHtml(btns)}
         </button>
